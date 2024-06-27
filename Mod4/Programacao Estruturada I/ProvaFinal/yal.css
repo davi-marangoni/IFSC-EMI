@@ -1,0 +1,139 @@
+.Menu{
+    margin-left: 5rem;
+}
+.Restaurante{
+    margin-top: -3.3rem;
+    margin-left: 16rem;
+}
+img{
+    width: 25REM;
+    height: 10REM;
+    margin-left: 28rem;
+    margin-top: -6rem;
+}
+header{
+    font-size: 25px;
+    background-color: #d9003d;
+}
+.R1{
+    width: 28.5REM;
+    height: 20REM;
+    margin-left: -8px;
+    margin-top: -54px;
+}
+.R2{
+    width: 427px;
+    height: 20REM;
+}
+.R3{
+    position: absolute;
+    top: 280px;
+    left:8px;
+    width: 28.25REM;
+    height: 20REM;
+}
+.menu2{
+    margin-left: -8px;
+    margin-top: -20px;
+    background-color: #d9003d;
+    width: 101%;
+    height: 20REM;
+}
+.contato{
+    margin-left: 1rem;
+}
+.endereco{
+    margin-top: -8.5rem;
+    margin-left: 30rem;
+}
+.horario{
+    margin-top: -12.4rem;
+    margin-left: 60rem;
+}
+fieldset{
+
+    background-image: linear-gradient(to top, #d9003d, white);
+    width: 10rem;
+    height: 10rem;
+}
+.tabelona{
+    margin-right: 500rem;
+}
+.c1{
+    margin-left: -10rem;
+}
+.A1{
+    position: absolute;
+}
+.a1{
+    position: absolute;
+    left: -27rem;
+    margin-top: 7rem;
+}
+.B1{
+    position: absolute;
+    left: 27rem;
+}
+.b1{
+    position: absolute;
+    margin-top: 7rem;
+    left: 0.1rem;
+}
+.C1{
+    position: absolute;
+    left: 60rem;
+}
+.c1{
+    position: absolute;
+    margin-top: 7rem;
+    left: 40rem;
+}
+.fieldset1{
+    width: 98%;
+    height: 400px;
+}
+.CarnesPreco{
+    position: absolute;
+    margin-top: 13rem;
+}
+.SaladasPreco{
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 27rem;
+}
+.MassasPreco{
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 58rem;
+}
+.fieldset2{
+    width: 98%;
+    height: 50px;
+}
+.sla{
+    margin-left: 5rem;
+}
+.fieldset3{
+    width: 50%;
+    height: 100px;
+}
+.butao{
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+
+}
+.M1{
+    position: absolute;
+    margin-top: 17rem;
+}
+.M2{
+    position: absolute;
+    margin-top: 17rem;
+    margin-left: 26rem;
+}
+.M3{
+    position: absolute;
+    margin-top: 17rem;
+    margin-left: 55rem;
+}

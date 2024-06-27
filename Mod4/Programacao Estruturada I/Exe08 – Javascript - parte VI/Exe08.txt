@@ -1,0 +1,19 @@
+Prova Javascript
+
+Desenvolver um site igual ao exemplo anexo.
+
+Calculo do
+
+Carro:
+
+- Popular = R$ 50,00
+
+- Premium = R$ 75,00
+
+- Luxo = R$ 100,00
+
+Onde:
+
+Carro = x, moto = x*0,8 e Van = x*1,5
+
+GPS = Acrescentar + R$ 20,00.

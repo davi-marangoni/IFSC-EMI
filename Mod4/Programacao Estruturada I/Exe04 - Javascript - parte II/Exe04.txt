@@ -1,0 +1,9 @@
+Exe04 - Javascript - parte II
+
+2)Faça um programa que calcule o seu salário. Peça o valor hora de trabalho e
+
+a quantidade de horas trabalhadas ( utilize input type="number").Crie um botão para calcular seu salário bruto e líquido. onde: salário líquido é igual ao salário bruto menos 27% de imposto.
+
+Obs: Mostre o valor em reais na tela utilizando a função:.toLocaleString('pt-br’,{style: 'currency', currency:'BRL'}).
+
+Crie uma função em javascript para realizar o cálculo.

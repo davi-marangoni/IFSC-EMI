@@ -1,0 +1,13 @@
+Exe06 – Javascript - parte IV
+
+Faça um programa para auxiliá-lo no orçamento para a construção de uma casa.
+
+O software deve calcular o orçamento dos pisos, tijolos e mão-de-obra. o sistema deve calcular e mostrar o resultado:
+
+a) Compra de pisos. Para isso peça as dimensões do piso (lado x lado) e a metragem (m2) necessária para a colocação do piso (inserir margem de segurança de 12%) e solicitar para o usuário escolher o modelo do piso (4 tipos), Obs: cada piso tem um preço diferente;
+
+b) Compras de tijolos. Para isso solicite as dimensões do tijolo (lado x lado) e a metragem total das paredes casa. (inserir margem de segurança de 15%) e solicitar o preço de cada tijolo;
+
+c) Orçamento da mão-de-obra. Para isso solicite o valor(R$) do metro quadrado da mão-de-obra e quantos metros quadrados tem a casa.
+
+Ao final imprima o orçamento total. Capriche no layout (background, imagens, bordas,...) 

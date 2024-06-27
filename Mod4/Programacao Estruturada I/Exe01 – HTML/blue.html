@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" CONTENT="RevealTrans(Duration=1)">
+	<title></title>
+	<link href="cleison.css" rel="stylesheet"/>
+</head>
+<body style="background-color: #050505;font-family: Arial; font-size: 30px;">
+<img src="fundo3.png" width="1000px, 1000px"/>
+<table  style="background-color: #050505; width: 500px; position: absolute; top: 8px; left: 260px;">
+	<td>
+		<h1 style="color: #178bff">SINOPSE</h1>
+		<p style="color: #178bff">Em Blue Shift, jogador assume o controle de um segurança da Black Mesa, Barney Calhoun.</p>
+		<p style="color: #178bff">Os inimigos são os mesmos de Half-Life, porém a expansão conta com algumas armas diferentes. </p>
+		<p style="color: #178bff">O jogo também tem uma duração menor que o original. Barney passa por diversos pontos que interligam Half-Life e suas expansões, como o momento em que Gordon pula em um portal para entrar no planeta Xen, ou as diversas misteriosas aparições de G-Man.</p>
+		<button type="button" onclick="Mudarestado1('minhaDiv1')" style=" font-size: medium;text-align: left;width: 500px; background-color: #050505 ; border-color: #050505 ; color: #178bff;">NOVIDADES ↓</button>
+		<div id="minhaDiv1" style="display:none; color: #178bff">
+			<p>• Adicao de novas armas, e explicacao de fatos que ocorreram paralelamente ao jogo principal.</p>
+			<p>• Explicação de fatos que ocorreram paralelamente ao jogo principal.</p>
+		</div>
+		<button type="button" onclick="Mudarestado2('minhaDiv2')" style=" font-size: medium;text-align: left;width: 500px; background-color: #050505 ; border-color: #050505 ; color: #178bff;">PERSONAGENS IMPORTANTES ↓</button>
+		<div id="minhaDiv2" style="display:none; color: #178bff">
+			<p>Barney Calhoun </p>
+			<div>
+				<p><img src="BARNEY.png" width="200px, 200px" /></p>
+				<p>Segurança da Black Mesa.</p>
+			</div>
+</table>
+</body>
+<script>
+	function Mudarestado1(el) {
+		var display = document.getElementById(el).style.display;
+		if (display == "none")
+			document.getElementById(el).style.display = 'block';
+		else
+			document.getElementById(el).style.display = 'none';
+	}
+	function Mudarestado2(el) {
+		var display = document.getElementById(el).style.display;
+		if (display == "none")
+			document.getElementById(el).style.display = 'block';
+		else
+			document.getElementById(el).style.display = 'none';
+	}
+</script>
+</html>

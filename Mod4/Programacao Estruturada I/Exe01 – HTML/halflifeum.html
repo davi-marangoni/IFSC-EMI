@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" >
+    <title></title>
+    <link href="cleison.css" rel="stylesheet"/>
+</head>
+<body style="background-color: #050505;font-family: Arial; font-size: 30px;">
+<img src="fundo1.png" width="1000px, 1000px"/>
+<table  style="background-color: #050505; width: 500px; position: absolute; top: 8px; left: 260px;">
+    <td>
+        <h1 style="color: #ff720a">SINOPSE</h1>
+        <p style="color: #ff720a">É um jogo eletrônico de ficção científica desenvolvido pela Valve Corporation, sendo o produto de estreia da companhia e o primeiro na série Half-Life.</p>
+        <p style="color: #ff720a">Nele, os jogadores assumem o papel de Dr. Gordon Freeman, um físico teórico que deve lutar para fugir de um centro de pesquisa secreto e subterrâneo cujos experimentos e pesquisas com tecnologia de teletransporte tiveram resultados desastrosos.</p>
+        <button type="button" onclick="Mudarestado1('minhaDiv1')" style=" font-size: medium;text-align: left;width: 500px; background-color: #050505 ; border-color: #050505 ; color: #ff720a;">JOGABILIDADE ↓</button>
+        <div id="minhaDiv1" style="display:none; color: #ff720a">
+            <p>Half-Life é um jogo de tiro em primeira pessoa que requer que o jogador realize missões de combate e resolução de quebra-cabeças para progredir.</p>
+            <p>Comparado à maioria dos jogos de tiro em primeira pessoa da época, que contavam com interrupções como cutscenes para detalhar suas tramas, a história de Half-Life é contada inteiramente por meio do recurso de sequências programadas que mantém o jogador no controle da visão em primeira pessoa durante todo o tempo.</p>
+            <p> Para reforçar isso, o jogo não possui cortes de cena, e o jogador raramente perde a habilidade de controlar Gordon, o qual nunca fala e nunca é visto, de fato, no jogo; o jogador enxerga "através de seus olhos" por toda a extensão do jogo.</p>
+        </div>
+        <button type="button" onclick="Mudarestado2('minhaDiv2')" style=" font-size: medium;text-align: left;width: 500px; background-color: #050505 ; border-color: #050505 ; color: #ff720a;">PERSONAGENS IMPORTANTES ↓</button>
+        <div id="minhaDiv2" style="display:none; color: #ff720a">
+            <p>Gordon Freeman</p>
+            <div>
+                <p><img src="GORDONFREEMAN.png" width="200px, 200px" />
+                <p>Físico teorico e personagem principal de toda a saga.
+            </div>
+            <div>
+            <p>Dr Eli Vance</p>
+                <img src="ELAI.png" width="200px, 200px" />
+            <p>Amigo e mentor de Gordon</p>
+            </div>
+            <div>
+            <p>Dr Isaac Kleiner </p>
+                <img src="Kleiner.png" width="200px, 200px" />
+            <p>Amigo e mentor de gordon, assim como Eli</p>
+            </div>
+            <div>
+                <p>G-Man</p>
+                <img src="g-man.png" width="500px, 500px" />
+                <p>Figura misteriosa que está presente durante toda a saga.</p>
+            </div>
+    </td>
+</table>
+</body>
+<script>
+    function Mudarestado1(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    function Mudarestado2(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
+</html>

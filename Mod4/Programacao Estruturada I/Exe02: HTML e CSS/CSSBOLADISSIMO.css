@@ -1,0 +1,150 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #262626;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: black;
+}
+header{
+    font-family: Arial;
+    text-align: center;
+    color: black;
+    font-size: 100%;
+}
+header img{
+    margin-top: 1%;
+    width: 30%;
+
+}
+table {
+    position: absolute;
+    text-align: justify;
+    width: 300px;
+    height: 300px;
+
+
+    max-width: 250px;
+    padding: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    border-image:
+            linear-gradient(
+                    to bottom,
+                    black,
+                    rgba(0, 0, 0, 0)
+            ) 1 100%;
+}
+table h1{
+    text-align: center;
+}
+
+.tabela1{
+    position: absolute;
+    left: -7.5%;
+    top: 75%
+}
+.tabela2{
+    position: absolute;
+    left: 19%;
+    top: 75%
+
+}
+.tabela3{
+    position: absolute;
+    right: 12.5%;
+    top: 75%
+}
+body{
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+.a {
+    position: absolute;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    right: 1%;
+}
+.aa {
+    background: #222;
+    color: white;
+    padding: 1rem;
+}
+.b {
+    position: absolute;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    left: 1%;
+    height: 248px;
+}
+.bb {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 215px;
+
+}
+.tabela4{
+    position: absolute;
+    left: -7.5%;
+    top: 95%
+}
+.tabela5{
+    position: absolute;
+    left: 19%;
+    top: 95%
+}
+.tabela6{
+    position: absolute;
+    right: 12.5%;
+    top: 95%
+}
+.sla{
+    position: absolute;
+    left: 43%;
+    top: 75%;
+}
+.c {
+    margin-top: 50px;
+    position: absolute;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    left: 15%;
+    height: 333px;
+}
+.cc {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 300px;
+}
+.d {
+    margin-top: 50px;
+    position: absolute;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    margin-left: 55%;
+    height: 333px;
+}
+.dd {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 300px;
+}
+footer{
+    position: absolute;
+    top: 95%;
+}

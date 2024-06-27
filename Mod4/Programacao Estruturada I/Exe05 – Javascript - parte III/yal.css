@@ -1,0 +1,16 @@
+body{
+    font-family: Arial;
+    font-size: 20px;
+}
+header{
+    font-size: 20px;
+    text-align:  center;
+    background-image: linear-gradient(to right, red, yellow);
+    padding: 1rem;
+
+}
+footer{
+    background-image: linear-gradient(to right, red, yellow);
+    padding: 2rem;
+}
+

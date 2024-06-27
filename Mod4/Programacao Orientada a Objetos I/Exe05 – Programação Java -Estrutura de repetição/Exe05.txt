@@ -1,0 +1,7 @@
+Lista de Exercícios de estrutura de repetição FOR, DO...WHILE e WHILE:
+
+1)Desenvolva um programa em linguagem ‘C’ que peça dois números inteiros e gere os números inteiros que estão no intervalo entre eles. (para...até - For)
+
+2) Desenvolva um programa em linguagem ‘C’ que leia dez números inteiros e calcule a diferença entre o maior e o menor número do conjunto. (enquanto - While)
+
+3) Desenvolva um programa em linguagem ‘C’ que calcule e imprima na tela a média bimestral da turma. O usuário deve informar a quantidade de alunos, bem como cada nota. (repita - do.. while)

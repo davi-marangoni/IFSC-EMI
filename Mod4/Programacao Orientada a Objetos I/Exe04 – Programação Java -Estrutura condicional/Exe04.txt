@@ -1,0 +1,13 @@
+Lista de Exercícios com o comando if-else e switch-case:
+
+Usar if-else
+
+1) Faça um programa que peça 4 números. Some o dobro do 1º com metade do 2º e multiplique com o 3º e divida pelo 4º. Agora execute as mesmas operações porém na sequencia inversa da entradas. Agora verifique qual a sequência resultou no maior resultado (1º, 2º, 3º e 4º ou 4º, 3º, 2º e 1º) ou se o resultado permaneceu idêntico.
+
+2) Faça um programa que peça 3 valores. Verifique se os valores fornecidos são todos iguais, ou se possui apenas dois iguais ou se são todos diferentes. Demonstre os números ordenados da forma crescente.
+
+Usar switch-case
+
+3) Desenvolva uma calculadora que peça dois valores ao usuário e solicite a operação desejada (+, -,  *, / ), após isso demonstre o resultado.
+
+4) Desenvolva um programa que peça para 4 usuários informar sua opinião a respeito do atendimento de uma loja. Sendo as seguintes opções: 1- Muito Satisfeito, 2 - Satisfeito, 3 - Pouco Satisfeito, 4 – Insatisfeito. Ao final imprima o percentual de cada resposta.

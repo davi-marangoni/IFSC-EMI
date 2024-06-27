@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cálculo de salário</title>
+    <meta charset="UTF-8" />
+    <link href="dnv.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function calculaSalario() {
+            var valor = document.getElementById("valor").value;
+            var tempo = document.getElementById("tempo").value;
+            var salarioBruto = valor * tempo;
+            var imposto = salarioBruto * 0.27;
+            var salarioLiquido = salarioBruto - imposto;
+
+
+            console.log(salarioBruto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+            console.log(salarioLiquido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+
+            document.getElementById('A').innerHTML = salarioBruto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            document.getElementById('B').innerHTML = salarioLiquido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+    </script>
+</head>
+<body>
+    <div class="dive">
+        <fieldset>
+            <legend>Cálcula salário</legend>
+            <br>
+            <label>Valor da hora:</label>
+            <input class="imputt" id="valor" type="text" />
+            <br>
+            <br>
+            <label>Quantidade de horas trabalhadas:</label>
+            <input id="tempo" type="text" />
+            <br>
+            <br>
+            <button id="calcular" onclick="calculaSalario()">Calcular salário</button>
+        </fieldset>
+
+
+        <br>
+        <br>
+        <div class="A">SALARIO BRUTO<div id="A"></div>
+        </div>
+        <div class="B">SALARIO LIQUIDO<div id="B"></div>
+        </div>
+    </div>
+</body>
+</html>

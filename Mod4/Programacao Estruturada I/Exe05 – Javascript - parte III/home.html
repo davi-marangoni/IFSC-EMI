@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzaria</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="yal.css">
+</head>
+<body>
+<header>
+    <img  src="davizzaria.png" width="200rem" height="200rem"/>
+</header>
+<form>
+    <div>
+        <label for="sabor">Selecione o Sabor de sua Pizza:</label>
+        <br>
+        <br>
+        <select id="sabor" name="sabor" style="margin-left: 10rem">
+            <option value="cal">Calabresa (R$ 30,00)</option>
+            <option value="stro">Strogonoff de Carne(R$ 35,00)</option>
+            <option value="qq">Quatro-Queijos(R$ 40,00)</option>
+            <option value="casa">Da Casa(R$ 45,00)</option>
+        </select>
+    </div>
+        <p> Tamanho da Pizza:</p>
+        <div style="margin-left: 10rem">
+            <input type="radio" name="tam" id="tam" value="1">
+            <label for="tam">Pequena</label>
+            <input type="radio" name="tam" id="tam2" value="2" checked="true">
+            <label for="tam">Media</label>
+            <input type="radio" name="tam" id="tam3" value="3">
+            <label for="tam">Grande</label>
+        </div>
+    </div>
+    <div>
+        <p>Selecione Algum Acompanhamento:</p>
+        <div style="margin-left: 10rem">
+            <input type="checkbox" checked id="refri" name="refri"  value="coke">
+            <label for="refri">Refrigerante</label>
+            <input type="checkbox" checked id="sobre" name="sobre"  value="sobremesa">
+            <label for="sobre">Sombremesa Especial</label>
+        </div>
+    </div>
+    <div>
+        <p>Informações do Cliente:</p>
+        <div style="margin-left: 10rem">
+            <label for="name"><span>Nome:</span><abbr title="required">*</abbr></label>
+            <input type="text" id="name" name="username">
+            <label for="mail"><span>Email:</span><abbr title="required">*</abbr></label>
+            <input type="email" id="mail" name="usermail">
+        </div>
+    </div>
+    <br>
+    <div>
+        <p>Informações de Pagamento:</p>
+        <div style="margin-left: 10rem">
+            <label for="card"><span>Cartão de Credito:</span></label>
+            <select id="card" name="usercard" >
+                <option value="visa">Visa</option>
+                <option value="master">MasterCard</option>
+                <option value="nu">Nubank</option>
+            </select>
+            <br>
+            <br>
+            <label for="number"><span>Número do cartão:</span><abbr title="required">*</abbr></label>
+            <input type="tel" id="number" name="cardnumber" min="9" max="9">
+            <br>
+            <br>
+            <label for="month"><span>Data de expiração:</span><abbr title="required">*</abbr></label>
+            <input type="month" id="month" name="expiration">
+        </div>
+        <br>
+        <br>
+        <button style="margin-left: 40rem" id="botao" type="button" onclick="Calcula()">Total</button>
+        <br>
+        <br>
+        <div class="valor" align="center"> <label id="valor" background="pink">R$ 0,00</label></div>
+    </div>
+    <br>
+</form>
+<footer>
+</footer>
+<script>
+    function Calcula()
+    {
+        var n1 = 0
+        var Sabor = window.document.getElementById('sabor').value
+        if(Sabor == 'cal') {
+            n1=30;
+        }
+        else if(Sabor == 'stro') {
+            n1=35;
+        }
+        else if (Sabor == 'qq') {
+            n1=40;
+        }
+        else if ( Sabor == 'casa') {
+            n1=45;
+        }
+        if ((document.getElementById('tam').value =='1' && document.getElementById('tam').checked)){
+            n1=n1 * 0.5;
+        }
+        else if ((document.getElementById('tam3').value =='3' && document.getElementById('tam3').checked)){
+            n1=n1* 1.5;
+        }
+        var beb = document.getElementById('refri')
+        if (beb.checked) {
+            n1= n1+10;
+        }
+        var sobre = document.getElementById('sobre')
+        if (sobre.checked) {
+            n1= n1+5;
+        }
+        window.document.getElementById('valor').innerHTML = n1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+</script>
+</body>
+</html>

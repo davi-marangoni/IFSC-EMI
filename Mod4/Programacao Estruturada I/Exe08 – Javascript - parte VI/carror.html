@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Locadora de Carros</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript">
+		function Calcula()
+		{
+			var nTotot = 0
+			var nTotal = 0
+			var sVeiculo = window.document.getElementById('classe').value
+			if (sVeiculo == 'popular')
+			{
+				nTotal = 50;
+			}
+			else if (sVeiculo == 'premim')
+			{
+				nTotal  = 75;
+			}
+			else if (sVeiculo == 'luxo')
+			{
+				nTotal = 100;
+			}
+			if ((document.getElementById('veiculo').value == '1' && document.getElementById('veiculo').checked))
+			{
+				nTotal = nTotal;
+			}
+			else if ((document.getElementById('veiculo').value == '2' && document.getElementById('veiculo').checked))
+			{
+				nTotal = nTotal * 0.8;
+			}
+			else if ((document.getElementById('veiculo').value == '3' && document.getElementById('veiculo').checked))
+			{
+				nTotal = nTotal * 1.5;
+			}
+			var nGPS = document.getElementById('gps') 
+			if (nGPS.checked)
+			{
+				nTotal = nTotal + 20;
+			}
+			var qtdDias = window.document.getElementById('dias').value;
+			nTotot=nTotal * qtdDias;
+			window.document.getElementById('valor').innerHTML = `R$ ${nTotot}`
+
+		}
+	</script>
+</head>
+<body style="text-align: center; background-color: #ffaa00; height:800px; padding:5px; ">
+	<h1><strong>Locadora de carros</strong></h1>
+	<fieldset style="text-align: left;"  >
+		<div id="car" style="background-color: 	#ffe37f; height:800px; padding:5px;">
+		<p><label>Nome do Cliente
+			<input type="text" name="cliente"></label>
+			<p><label>Quantidade de dias
+			<input type="number" id="dias"></label>
+			<p><label>Classe do veículo</label>
+				<select id="classe" name="classe">
+					<option value="popular" selected>Popular</option>
+					<option value="premim">Premium</option>
+					<option value="luxo">Luxo</option>
+				</select>
+		</p>
+		<fieldset>
+			
+			<legend><strong>Veículos</strong></legend>
+			<div id="car" style="background-color: #eed790; height:200px; padding:5px;">
+			<table style="width: 100%">
+				<tr>
+					<th>
+					<input type="radio" name="veiculo" id="veiculo" value="1" checked="true">
+					<label for="veiculo">Carro</label>
+					</th>
+					<th>
+					<input type="radio" name="veiculo" id="veiculo2" value="2">
+					<label for="veiculo">Moto</label>
+					</th>
+					<th>
+					<input type="radio" name="veiculo" id="veiculo3" value="3">
+					<label for="veiculo">Van</label>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<img src="carro.jpg"width=200 height=140>
+					</th>
+					<th>
+						<img src="moto.jpg"width=200 height=140>
+					</th>
+					<th>
+						<img src="van.jpg"width=200 height=140>
+					</th>
+
+				</tr>
+				</table>
+		</fieldset>
+		<fieldset>
+			<legend><strong>Adicional</strong></legend>
+			<div id="car" style="background-color:#eed790 ; height:50px; padding:5px;">
+			<p>
+				<input type="checkbox" id="gps" name="gps" value="gps1">
+				<label for="gps">GPS</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend><strong>Informações de Pagamento</strong></legend>
+			<div id="pisos" style="background-color: #eed790 ; height:150px; padding:5px;">
+			<p>
+				<label for="card"><span>Cartão de Crédito:</span></label>
+				<select id="card" name="usercard">
+					<option values="visa">Visa</option>
+					<option value="mc">Mastercard</option>
+					<option value="amex">American Express</option>
+				</select>
+			</p>
+		<p>
+			<label for="number"><span>Numero de cartão</span><strong><abbr title="required">*</abbr></strong></label>
+			<input type="tel" id="number" name="cardnumber" min="1" max="10">
+		</p>
+		<p>
+			<label for="pwd"><span>Password:</span><strong><abbr title="required">*</abbr></strong></label>
+			<input type="password" id="pwd" name="password">
+		</p>
+		</fieldset>
+		<p> <button type="button" onclick="Calcula()">Calcula</button></p>
+		<h1 align="center" style="color: red;"> <label id="valor"><strong> R$ 0,00</strong></label></h1>
+	</fieldset>
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    font-family: Arial;
+    font-size: 20px;
+    background-color: #222;
+    margin: 0;
+}
+header{
+    font-size: 30px;
+    text-align:  center;
+    background-image: linear-gradient(to right, red, purple);
+    padding: 1rem;
+    margin: auto;
+
+}
+footer{
+    background-image: linear-gradient(to right, red, purple);
+    padding: 2rem;
+}
+.c {
+    margin-top: 2rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    margin-right: 55%;
+    height: 70px;
+}
+.cc {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 38px;
+}
+.d {
+    margin-top: -1.7rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    margin-right: 55%;
+    height: 100px;
+}
+.dd {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 68px;
+}
+.e {
+    margin-top: 1rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    margin-right: 55%;
+    height: 72px;
+}
+.ee {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 40px;
+}
+.f {
+    margin-top: 1rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    margin-right: 55%;
+    height: 98px;
+}
+.ff {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 66px;
+}
+.g {
+    margin-top: 1rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+    margin-right: 55%;
+    height: 72px;
+}
+.gg {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 40px;
+}
+.h {
+    margin-top: 1rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+    margin-right: 55%;
+    height: 60px;
+}
+.hh {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    height: 28px;
+}
+.i {
+    position: absolute;
+    left: 65rem;
+    top: 25rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, red, purple);
+    padding: 10px;
+    height: 90px;
+}
+.ii {
+    background: #222;
+    color: white;
+    padding: 2rem;
+    height: 28px;
+}
+.botao{
+    border-radius: 20px;
+    position: absolute;
+    top: 29rem;
+    left: 10rem;
+}

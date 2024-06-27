@@ -1,0 +1,104 @@
+Olá turma. Seguem as orientações desta atividade no arquivo em anexo.
+
+--------------------------------------------------------------------------
+
+-----------------------
+Desafio para os alunos:
+-----------------------
+Criar o Modelo ER e o banco de dados ou podem usar o meu código
+Quem precisar do modelo ER pode baixar no porta arquivos(SIGAA) da turma.
+-------------------------------------------------------------------------
+Podem utilizar o meu Create Table(Alterar o nome Miguel para o seu nome):
+-------------------------------------------------------------------------
+CREATE TABLE ProdutoMiguel (
+  idProdutoMiguel INTEGER UNSIGNED  NOT NULL   AUTO_INCREMENT,
+  Nome VARCHAR(35)  NULL  ,
+  SomaEstoque REAL  NULL DEFAULT 0 ,
+  SomaValor REAL  NULL DEFAULT 0 ,
+  Unidade VARCHAR(3)  NULL    ,
+PRIMARY KEY(idProdutoMiguel));
+
+CREATE TABLE FabricaMiguel (
+  idFabricaMiguel INTEGER UNSIGNED  NOT NULL   AUTO_INCREMENT,
+  Nome VARCHAR(35)  NULL  ,
+  SomaValor REAL  NULL DEFAULT 0   ,
+PRIMARY KEY(idFabricaMiguel));
+
+CREATE TABLE ProducaoMiguel (
+  idProducaoMiguel INTEGER UNSIGNED  NOT NULL   AUTO_INCREMENT,
+  FabricaMiguel_idFabricaMiguel INTEGER UNSIGNED  NOT NULL  ,
+  Nome VARCHAR(50)  NULL  ,
+  DataProducao DATE  NULL  ,
+  SomaValor REAL  NULL DEFAULT 0   ,
+PRIMARY KEY(idProducaoMiguel)  ,
+INDEX ProducaoMiguel_FKIndex1(FabricaMiguel_idFabricaMiguel),
+  FOREIGN KEY(FabricaMiguel_idFabricaMiguel)
+    REFERENCES FabricaMiguel(idFabricaMiguel)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION);
+
+CREATE TABLE PHP (
+  ProducaoMiguel_idProducaoMiguel INTEGER UNSIGNED  NOT NULL  ,
+  ProdutoMiguel_idProdutoMiguel INTEGER UNSIGNED  NOT NULL  ,
+  Quantidade REAL  NULL  ,
+  ValorUnitario REAL  NULL    ,
+PRIMARY KEY(ProducaoMiguel_idProducaoMiguel, ProdutoMiguel_idProdutoMiguel)  ,
+INDEX ProducaoMiguel_has_ProdutoMiguel_FKIndex1(ProducaoMiguel_idProducaoMiguel)  ,
+INDEX ProducaoMiguel_has_ProdutoMiguel_FKIndex2(ProdutoMiguel_idProdutoMiguel),
+  FOREIGN KEY(ProducaoMiguel_idProducaoMiguel)
+    REFERENCES ProducaoMiguel(idProducaoMiguel)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION,
+  FOREIGN KEY(ProdutoMiguel_idProdutoMiguel)
+    REFERENCES ProdutoMiguel(idProdutoMiguel)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION);
+
+---------------------------------------------
+Na tabela PHP:
+Elaborar o Trigger TgUpdatePHP
+Elaborar o Trigger TgDeletePHP
+-----------------------
+Após criar os Triggers:
+
+Inserir três fábricas;
+Inserir três produtos para serem fabricados;
+Inserir três produções. Para cada produção inserir dois produtos à sua escolha.
+
+Exportar o banco de dados(SQL) e enviar este arquivo único como resposta da atividade pelo SIGAA.
+
+----------------
+Exemplos de aula
+----------------
+
+TGUpdateFabrica
+Begin
+Update FabricaMiguel
+Set SomaValor=SomaValor+NEW.SomaValor-OLD.SomaValor
+Where FabricaMiguel.idFabricaMiguel=NEW.FabricaMiguel_idFAbricaMiguel;
+End
+
+TGInsertPHP
+Begin
+Update ProdutoMiguel Set SomaEstoque=SomaEstoque+NEW.Quantidade
+Where IdProdutoMiguel=NEW.ProdutoMiguel_idProdutoMiguel;
+Update ProdutoMiguel Set SomaValor=SomaValor+NEW.Quantidade*NEW.ValorUnitario
+Where IdProdutoMiguel=NEW.ProdutoMiguel_idProdutoMiguel;
+Update ProducaoMiguel Set SomaValor=SomaValor+NEW.Quantidade*NEW.ValorUnitario
+Where IdProducaoMiguel=NEW.ProducaoMiguel_idProducaoMiguel;
+END
+
+Insert into PHP(ProducaoMiguel_idProducaoMiguel,ProdutoMiguel_idProdutoMiguel,Quantidade,ValorUnitario)
+Values(2,1,500,1.50);
+
+Insert into FabricaMiguel(Nome) Values ('Fábrica um'),('Fábrica dois');
+Insert into ProdutoMiguel(Nome,Unidade) Values
+('Caixa de papelão Tamanho P','uni'),
+('Caixa de papelão Tamanho M','uni'),
+('Caixa de papelão Tamanho G','uni');
+
+Insert into ProducaoMiguel(FabricaMiguel_idFAbricaMiguel,Nome,DataProducao)Values
+(1,'Produção caixas de papelão para o IFSC','2021-06-30');
+
+Insert into ProducaoMiguel(FabricaMiguel_idFAbricaMiguel,Nome,DataProducao)Values
+(2,'Produção Fab2 caixas de papelão para a UNOESC','2021-07-28');

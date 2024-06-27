@@ -1,0 +1,11 @@
+Faça um programa que simule uma urna eletrônica. 
+
+Nesta eleição existem três candidatos. Desenvolva um programa que peça o número total de eleitores para que o sistema compute os votos até o número informado. 
+
+Peça para cada eleitor votar. Avise o usuário após o voto ser computado.
+
+Ao final imprima na tela o número de votos de cada candidato e seu percentual com relação ao total de eleitores. 
+
+Enviando mensagem aos candidatos:
+
+Ao clicar em ‘enviar’ deve gerar uma mensagem na tela.

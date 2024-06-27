@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurante do Davi</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="yal.css">
+    <script>
+        function Calcula(){
+            var nTotal = 0
+            var sSabor = window.document.getElementById('CarnesPreco').value
+            if(sSabor == 'Bife Acebolado')
+            {
+                nTotal = 25;
+            }
+            else if(sSabor == 'Peito de Frango')
+            {
+                nTotal = 30;
+            }
+            else if(sSabor == 'Picanhona TOP')
+            {
+                nTotal = 50;
+            }
+
+            var QtdP = window.document.getElementById('qtdCarne').value
+            nTotal2 = nTotal * QtdP
+
+            var sSabor2 = window.document.getElementById('SaladasPreco').value
+            if(sSabor2 == 'Salada Comum')
+            {
+                nTotal = 25
+            }
+            else if(sSabor2 == 'Salada Temperada')
+            {
+                nTotal = 30
+            }
+            else if(sSabor2 == 'Salada TOP')
+            {
+                nTotal = 50
+            }
+
+            var QtdX = window.document.getElementById('qtdSalada').value
+            nTotal3 = nTotal * QtdX
+
+            var sSabor3 = window.document.getElementById('MassasPreco').value
+            if(sSabor3 == 'Carbonara')
+            {
+                nTotal = 25
+            }
+            else if(sSabor3 == 'Molho Branco')
+            {
+                nTotal = 30
+            }
+            else if(sSabor3 == 'Molho funghi')
+            {
+                nTotal = 50
+            }
+            var QtdF = window.document.getElementById('qtdMassa').value
+            nTotal4 = nTotal * QtdF
+
+
+            var nTotalT = nTotal2 + nTotal3 + nTotal4
+            console.log(nTotalT)
+
+            var nBebida = document.getElementById('Beb')
+            if (nBebida.checked)
+            {
+                nTotalT = nTotalT + 10
+            }
+            var nSobre = document.getElementById('Tal')
+            if (nSobre.checked)
+            {
+                nTotalT = nTotalT + 5
+            }
+            window.document.getElementById('valor').innerHTML = `R$ ${nTotalT}`;
+        }
+
+		
+		function getValueById(id){
+			return window.document.getElementById(id).value || 0;
+		}
+		
+
+        function notif(){
+			
+			var dados = [],
+				nome = getValueById('cliente'),
+				mensagem = "Olá " + nome;
+			
+			getValueById('qtdCarne')>0 && dados.push({qtd: getValueById('qtdCarne'), preco: getValueById('CarnesPreco')});
+			getValueById('qtdSalada')>0 && dados.push({qtd: getValueById('qtdSalada'), preco: getValueById('SaladasPreco')});
+			getValueById('qtdMassa')>0 && dados.push({qtd: getValueById('qtdMassa'), preco: getValueById('MassasPreco')});
+			
+			dados.forEach(function(produto, i){
+				i == 0 && (mensagem += " pelo pedido de : ");
+				i != 0 && (mensagem += ' , ');
+				mensagem += produto.qtd + " , " + produto.preco;
+			});
+			
+			mensagem += " Obrigado pela preferencia!";
+
+            alert(mensagem);
+        }
+    </script>
+</head>
+<body>
+<header>
+    <br>
+    <p class="Menu"><a href="#menu">Menu</a></p>
+    <p class="Restaurante">Restaurtante</p>
+    <img src="LOGO.png">
+</header>
+<br>
+<br>
+<br>
+<div>
+    <img class="R1" src="rest1.jpg">
+    <img class="R2" src="rest2.jpg">
+    <img class="R3" src="rest3.jpg">
+<div class="menu2">
+    <div class="contato">
+        <h1>Contato</h1>
+        <p>(99) 99999-9999</p>
+        <p>(99) 99999-9999</p>
+    </div>
+    <div class="endereco">
+        <h1>Endereço</h1>
+        <p>Bairro Lider - Perto do Shopping Patio Chapecó</p>
+        <p>Chapecó - Santa Catarina</p>
+        <p>89805-301</p>
+        <p>Brasil</p>
+    </div>
+    <div class="horario">
+        <h1>Horário de Funcionamento</h1>
+        <p>Seg.:	19:00 – 00:00</p>
+        <p>Ter.:	19:00 – 00:00</p>
+        <p>Qua.:	19:00 – 00:00</p>
+        <p>Qui.:	19:00 – 02:00</p>
+        <p>Sex.:	19:00 – 04:00</p>
+        <p>Sáb.:	19:00 – 04:00</p>
+        <p>Dom.:	19:00 – 00:00</p>
+    </div>
+</div>
+</div>
+<h1 style="text-align: center"><a name="menu">Menu</a></h1>
+<form>
+    <fieldset class="fieldset1">
+        <legend>Pratos</legend>
+        <table>
+            <tr>
+                <th class="A1">
+                    <input type="radio" name="prato" id="Carnes" value="1" checked="true">
+                    <label for="Carnes">Carnes</label>
+                </th>
+                <th class="B1">
+                    <input type="radio" name="prato" id="Salada" value="2">
+                    <label for="Salada">Salada</label>
+                </th>
+                <th class="C1">
+                    <input type="radio" name="prato" id="Massas" value="3">
+                    <label for="Massas">Massas</label>
+                </th>
+            </tr>
+            <tr>
+            <th class="a1">
+                <img src="rest2.jpg">
+            </th>
+            <th class="b1">
+                <img src="rest3.jpg">
+            </th>
+            <th class="c1">
+                <img src="massa.jpg">
+            </th>
+            </tr>
+            <tr>
+                <th class="CarnesPreco">
+                    <select id="CarnesPreco" name="SelecCarnes">
+                        <option value="Bife Acebolado" selected>Bife Acebolado: R$25,00</option>
+                        <option value="Peito de Frango">Peito de Frango: R$:30,00</option>
+                        <option value="Picanhona TOP">Picanhona TOP: R$50,00</option>
+                    </select>
+                </th>
+                <th class="SaladasPreco">
+                    <select id="SaladasPreco" name="SelecSaladas">
+                        <option value="Salada Comum" selected>Salada Comum: R$25,00</option>
+                        <option value="Salada Temperada">Salada Temperada: R$:30,00</option>
+                        <option value="Salada TOP">Salada TOP: R$50,00</option>
+                    </select>
+                </th>
+                <th class="MassasPreco">
+                    <select id="MassasPreco" name="SelecMassas">
+                        <option value="Carbonara" selected>Carbonara: R$25,00</option>
+                        <option value="Molho Branco">Molho Branco: R$:30,00</option>
+                        <option value="Molho funghi">Molho funghi: R$50,00</option>
+                    </select>
+                </th>
+            </tr>
+            <tr class="M1">
+                <th>
+                    <label for="qtdCarne"><span>Quantidade:</span></label>
+                    <input type="number" id="qtdCarne" name="qtdCarne" min=0>
+                </th>
+            </tr>
+            <tr class="M2">
+                <th>
+                    <label for="qtdSalada"><span>Quantidade:</span></label>
+                    <input type="number" id="qtdSalada" name="qtdSalada" min=0>
+                </th>
+            </tr>
+            <tr class="M3">
+                <th>
+                    <label for="qtdMassa"><span>Quantidade:</span></label>
+                    <input type="number" id="qtdMassa" name="qtdMassa" min=0>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset class="fieldset2">
+        <legend>Adicional</legend>
+        <input type="checkbox" id="Beb" name="Beb">
+        <label for="Beb">Bebida</label>
+        <input class="sla" type="checkbox" id="Tal" name="Tal">
+        <label for="Tal">Talheres</label>
+    </fieldset>
+    <br>
+    <fieldset class="fieldset3">
+    <p> <button class="butao" type="button" onclick="Calcula();">Calcula</button></p>
+    <div><h1 style="text-align: center; margin-top: -60px"> <label id="valor">Total...:<strong> R$ 0,00</strong></label></h1></div>
+    </fieldset>
+    <br>
+    <div id="mensagemfinal" >
+        <label>Nome do Cliente:
+            <input id="cliente" type="text" name="cliente"></label>
+        <br>
+		<br>
+        <label>Mensagem:
+            <input type="text" id="mensagem"></label>
+        <button class="butaoFINAL" type="button" onclick="notif()">Envia o Pedido</button>
+    </div>
+</form>
+</body>
+</html>

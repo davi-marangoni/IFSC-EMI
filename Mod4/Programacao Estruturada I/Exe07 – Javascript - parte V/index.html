@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Urna Eletrônica</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+	bolsa = 0;
+	lula = 0;
+	hulk = 0;
+	ntot = 0;
+	totEle = 0;
+	function voto(candidato){
+		var totEle = window.document.getElementById('eleitor').value
+		ntot++;
+		if (ntot<= totEle){
+			if(candidato == '1'){
+				bolsa++;
+				alert("voto computado com sucesso!");
+				if (ntot==totEle){
+					ganha();
+				}
+			}
+			else if (candidato == '2'){
+				lula++;
+				alert("voto computado com sucesso!");
+				if (ntot==totEle){
+					ganha();
+				}
+			}
+			else if (candidato == '3'){
+				hulk++;
+				alert("voto computado com sucesso!");
+				if (ntot==totEle){
+					ganha();
+			}
+		}
+	}
+}
+	function ganha(){
+		if ((bolsa>lula) && (bolsa>hulk)){
+			alert("Bolsonaro wins com "+ bolsa +"votos");
+		}
+		else if ((lula>bolsa) && (lula>hulk)){
+			alert("Lula wins com "+ lula +"votos");
+		}
+		else if ((hulk>lula) && (hulk>bolsa)){
+			alert("Hulk wins com "+ hulk +"votos");
+		}
+	}
+	function Aviso() 
+    {
+         var nome = window.document.getElementById('nick_nome').value
+         var can1 = window.document.getElementById('can').value
+        alert("Obrigado "+ nome + ", sua mensagem foi enviado com sucesso para o candidato "+ can1 +"!");
+     }
+</script>
+</head>
+<body>
+	<h1>Urna Eletrônica</h1>
+	<p><label>Digite a quantidade de eleitores: <input type="text" id="eleitor"></label></p>
+	<fieldset>
+		<legend>Candidatos</legend>
+		<table id="candidato">
+			<tr>
+				<td><h3>Bolsonaro</h3>
+					<img src="bolso.jpg" onclick="voto('1')">
+				</td><!-- imagens-->
+				<td><h3>Lula</h3>
+					<img class="lula" src="lula.jpg" onclick="voto('2')">
+				</td><!-- imagens-->
+				<td><h3>Luciano huck</h3>
+					<img src="hulk.jpg" onclick="voto('3')">
+				</td><!-- imagens-->
+			</tr>
+		</table>
+	</fieldset>
+	<form class="form">
+		<h1>Mensagem para o seu candidato</h1>
+		<p>Digite seu nome :</p>
+		<input type="text" id="nick_nome"></input>
+		<p>Candidato:</p>
+		<select id="can" name="can">
+			<option>Bolsonaro</option>
+			<option>Lula</option>
+			<option>Hulk</option>
+		</select>	
+	<p>Mensagem:</p>
+	<textarea></textarea>
+	<button type="button" onclick="Aviso()">Enviar</button>
+	</form>
+</body>
+</html>

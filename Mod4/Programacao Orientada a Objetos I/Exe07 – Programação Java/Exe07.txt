@@ -1,0 +1,15 @@
+Lista de Exercícios:
+
+Com relação ao exercício do Controle Remoto:
+
+- Converta os atributos do controle remoto para private;
+
+- Crie o método construtor;
+
+- Crie todos os métodos getters e setters.
+
+- Crie o objeto pilha com os atributos privates : Marca, Carga, cor, peso.
+
+- Crie os método construtor e getters e setters.
+
+- Ajuste os métodos(liga, desliga, aumentavolume, etc...) do controle remoto para ver se este possui pilha com um carga acima de 10% antes de utilizá-la.

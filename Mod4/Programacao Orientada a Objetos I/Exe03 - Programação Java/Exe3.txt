@@ -1,0 +1,27 @@
+1) Faça um programa em java que calcule a área de uma circunferência. ( área = Pi x (raio) 2 Obs: Não esqueça de importar a biblioteca Scanner, para ler os conteúdos dos console.
+
+2)Faça o programa em java que que calcule e mostre:
+
+a) Peça um número e calcule a raiz quadrada;
+
+b) Peça mais um número e calcule a exponenciação do resultado anterior com este número;
+
+c) Calcule a raiz cúbica deste resultado.
+
+d) Mostre o valor arredondado para baixo;
+
+e) Mostre o valor arredondado para cima;
+
+f) Mostre o valor arredondado aritmeticamente;
+
+g) Crie uma variável e grave o valor absoluto;
+
+3) Faça um programa em java para saber a quantidade de macarrão que você precisa comprar para fazer a merenda escolar. O programa deverá pedir quantos alunos serão atendidos, sabendo que aluno consome em média 300 gramas. Considere que os produtos são vendidos em sacos de 5 quilos, que custam R$ 15,00 ou em pacotes de 1,5 quilos, que custam R$ 5,50. Informe ao usuário as quantidades de macarrão a ser comprada e custo final nas três situações:
+
+a) comprar apenas sacos de 5 quilos;
+
+b) comprar apenas sacos de 1,5 quilos;
+
+c) misturar as duas opções, de forma que o preço seja o menor.
+
+Obs.: Diminua 5% da compra, pois sempre faltam alguns alunos no dia. Utilize as funções ceil e floor para auxiliá-los neste cálculo. 

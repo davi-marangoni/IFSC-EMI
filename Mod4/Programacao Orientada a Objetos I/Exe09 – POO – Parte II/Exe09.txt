@@ -1,0 +1,45 @@
+Exe09 – POO – Parte II
+
+Desenvolver um sistema de Locação de Veículos.
+
+a) Crie um diagrama de classe referente a um sistema de locação de Veículos.
+
+b) Esse sistema deverá ter as seguintes classes :
+
+•Carro (atributos: #Placa, Modelo, ValDiaria, Disponivel);
+
+•Cliente (atributos: #CPF, Nome, Habilitado);
+
+•Locacao (atributos: #Placa, #CPF, #DatLoc, QtdDias,Total);
+
+c) Criar os métodos construtores, getters e setters para as 3 classes;
+
+d) Classe Carro, crie os métodos:
+
+•'DevolucaoVeiculo', para disponibilizar novamente o veículo para locação.
+
+•‘AtualizaDiaria' para atualizar o valor da diária do carro.
+
+e) Classe Cliente, crie os métodos:
+
+•'HabilitaCliente' para habilitar o cliente para locação;
+
+•'AtualizaCliente' para alterar os dados do cliente.
+
+f) Classe Locacao, crie os métodos:
+
+•'IncluiLocacao', para incluir uma nova locação de carro.
+
+Obs: - O carro deve estar disponível para locação;
+
+        - O cliente deve estar habilitado para fazer locação;
+
+        - O método deve calcular o valor total da locação, que seria a quantidade de dias, vezes o valor da diária do veículo;
+
+        - Atualizar o status 'Disponivel' do veículo, após a locação.
+
+•'AtualizaQtdDias', para atualizar a nova quantidade de dias para a devolução do veículo;
+
+Obs: - Recalcular o valor total da locação.
+
+g) Crie a classe principal 'main', chamada ‘ExeLocacao’. Nesta classe crie os novos objetos: Camaro (classe:Carro), seu nome (classe:Cliente) e realize uma Locação deste veículo (classe:Locacao).

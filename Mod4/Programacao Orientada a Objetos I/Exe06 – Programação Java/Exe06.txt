@@ -1,0 +1,25 @@
+Lista de Exercícios:
+
+1-      Crie o projeto e o pacote: ExeControle.
+
+2-      Crie a classe ControleRemoto
+
+3-      Defina 5 atributos para ela (marca, volume, canal,cor, power)
+
+4-      Crie os métodos: ligado, desligado, canalMais, canalMenos, VolumeMais, VolumeMenos, status.
+
+5-      Crie um objeto ControleRemoto,
+
+insira uma marca, volume, canal, cor, power.
+
+Teste o controle:
+
+Ligue, Aumente o volume, mostre status;
+
+Desligue, mude o canal, mostre status;
+
+Etc...
+
+ 
+
+Obs: Incluir o método construtor.

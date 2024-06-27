@@ -1,0 +1,5 @@
+1) Desenvolva a classe pai ‘Animal’ e as classes filhos ‘Aves’, ‘Mamíferos’, ‘’Repteis’.
+
+2) Desenvolva uma super classe (pai) e 3 subclasses (filhos) para serem utilizadas em um sistema.
+
+3) Crie dois objetos para cada uma das subclasses criadas nos itens anteriores. 

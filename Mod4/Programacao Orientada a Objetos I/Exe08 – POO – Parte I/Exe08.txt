@@ -1,0 +1,23 @@
+Exe08 – POO – Parte I :
+
+Crie o projeto ExeContaCorrente;
+
+Crie o pacote ExeContaCorrente;
+
+Crie classe principal ExeContaCorrente;
+
+Crie a classe Cliente (Nome, identidade, cpf, senha, endereço, fone, cidade, estado);
+
+Crie o métodos: construtor, getters e setters, VisualizaCliente, AlteraCliente, AlteraEndereço, AlteraFone, AlteraCidadeEstado, AlteraSenha; 
+
+Crie a classe ContaCorrente(Banco, agência, ContaCorrente, cpf, saldo, status); 
+
+Crie o métodos: construtor, getters e setters, VisualizaConta, AbrirConta, FecharConta, AlteraConta, DebitaSaldo, CreditaSaldo;
+
+ 
+
+Regras: Para alterar dados da conta deve-se entrar com o usuário e senha válido e status = true;
+
+Não posso sacar dinheiro sem saldo;
+
+Não posso fechar conta (status=false) com saldo.

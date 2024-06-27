@@ -1,0 +1,19 @@
+1) Realize o diagrama de classe dos registros escolar (mínimo 4 classes);
+
+2) Realize o diagrama de classe de uma locadora de veículos (mínimo 4 classes);
+
+3) Identifique as classes que atendam a modelagem do sistema abaixo:
+
+A companhia aérea “Voe Oeste” vai começar a operar em Santa Catarina e precisa de um sistema para gestão de algumas de suas necessidades.
+
+Uma das principais funcionalidades requeridas é o registro das aeronaves de sua frota. Cada aeronave tem seu código, tipo (avião a jato ou turbo hélice), ano de fabricação, número de registro, marca e modelo.
+
+Além disso, é fundamental para a empresa tem um controle da sua tripulação, que é composta pela equipe de atendentes de voo e pelos pilotos. Todos possuem as informações básicas como: nome, telefone, email, data de contratação e endereço, sendo que os pilotos possuem uma informação adicional do número de horas de voo;
+
+Outra funcionalidade esperada no sistema é o registro das informações dos clientes, como: nome, telefone, e-mail, data do último voo, endereço e tipo de poltrona favorita (janela, meio ou corredor);
+
+A parte de gerenciamento das manutenções das aeronaves é fundamental para a segurança dos voos e deve ser uma prioridade do sistema. Para este controle é necessário manter um registro dos serviços realizados em cada aeronave, como: data do serviço, descrição do serviço, quantidade de horas necessárias, mecânico que fez o serviço e peças usadas para os reparos (cada peça deve ter as informações de número de série, marca e modelo);
+
+Como todos os voos possuem as seguintes informações: data e horário de partida, data e horário de chegada, aeroporto de origem, aeroporto de destino, número de passageiros, aeronave alocada e tripulação alocada, o sistema precisa disponibilizar uma funcionalidade para que seja possível manter estes registros.
+
+O sistema não precisa de uma funcionalidade para a venda de passagens, porque a empresa já possui um outro software para esta demanda.

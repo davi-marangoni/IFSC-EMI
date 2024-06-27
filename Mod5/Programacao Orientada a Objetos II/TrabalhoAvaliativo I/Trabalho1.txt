@@ -1,0 +1,57 @@
+Trabalho Avaliativo
+
+ 
+
+1 - Matricula impar implementa Fila
+
+2 - Matricula par implementa Pilha
+
+ 
+
+Crie um sistema de Arraylist<Contato> que simule o comportamento de uma pilha e uma fila.
+
+ 
+
+Para isso crie a classe Contato com atributos de String nome e int telefone.
+
+ 
+
+Opções apenas de inserção e remoção de elementos
+
+ 
+
+Pilha -> primeiro que entra é o último que sai
+
+Fila -> primeiro que entra é o primeiro que sai
+
+ 
+
+Exemplo de menu:
+
+==========
+
+MENU GERAL
+
+1 - Fila
+
+2 - Pilha
+
+3 - Sair
+
+==========
+
+MENU INTERNO
+
+11 - Inserir
+
+12 - Remover
+
+13 - Mostrar
+
+14 - Tamanho Array
+
+15 - Sair
+
+==========
+
+ 

@@ -1,0 +1,41 @@
+Exe10 – POO1 – Parte III
+
+Desenvolver o sistema de Petshop Peludinhos.
+
+a) Crie um diagrama de classe referente a um sistema do PetShop.
+
+b) Esse sistema deverá ter as seguintes classes :
+
+•Animal (atributos: #Código, Nome, Raça, &Dono, DtProxVacina, status);
+
+•Cliente (atributos: #CPF, Nome, fone, Saldo);
+
+•Servicos (atributos: #Animal, Data, Servico, Valor, Pagto);
+
+c) Criar os métodos construtores, getters e setters para a classe Animal;
+
+d) Classe Animal, crie os métodos:
+
+•'StatusAnimal', para ativar/desativar o status do animal.
+
+•‘AtualizaDataVacina' para atualizar a data da próxima vacina.
+
+f) Classe Servicos, crie os métodos:
+
+•'IncluiServico', para incluir um novo serviço.
+
+Obs: - O animal deve estar com status ativo (true) para incluí-lo em um novo serviço e o cliente não pode estar com ‘Saldo’ negativo no momento da inclusão do serviço. 
+
+- Os serviços disponíveis são: Banho = R$ 20,00, Tosa = R$ 15,00, Diária = R$ 80,00, Vacina = R$ 50,00, e estas opções deverão ser mostradas ao usuário várias vezes até que o mesmo deseje concluir o serviço. 
+
+- O saldo do cliente deve ser atualizado após a inclusão do serviço somente quando o atributo Pagto for igual a ‘True’;
+
+•'AtualizaPagto', atualiza o campo Pagto para ‘True’ e diminui o valor do saldo do cliente;
+
+Obs: - As alterações só poderão ser realizadas quando atributo Pagto = ‘False’
+
+ 
+
+g) Crie a classe principal 'main', chamada ‘PetShop’. Nesta classe crie os novos objetos: Pluto (classe:Animal), seu nome (classe:Cliente) e realize o Serviço de Banho + Tosa (classe:Servico).
+
+As ações disponíveis deverão ser mostradas ao usuário várias vezes até que este deseje concluir o serviço.

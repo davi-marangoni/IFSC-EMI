@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" >
+	<title></title>
+	<script src="javinhadnv.js"></script>
+</head>
+<body onload="mudalambda()" style="background-color: #050505 ">
+<figure><img id="vrau" src="LOGO.png" width="100" style="position: absolute; left: 420px; top: 10px; width: 500px;"/></figure>
+	<img  id="lambda1" src="LAMBDA.png" width="100" style="position: absolute; left: 10px; top: 10px;" />
+	<img id="lambda2" src="LAMBDA.png" width="100" style="position: absolute; right: 10px; top: 10px;"/>
+</body>
+<script>
+	mudalogos = 0;
+	function mudalambda() {
+		if(mudalogos == 0){
+			document.getElementById("lambda1").src="LAMBDA.png";
+			document.getElementById("lambda2").src="LAMBDA.png";
+			document.getElementById("vrau").src="LOGO.png";
+			document.getElementById("vrau").style="position: absolute; left: 420px; top: 10px; width: 500px;";
+		}
+		if(mudalogos == 1){
+			document.getElementById("lambda1").src="LAMBDAGREE.png";
+			document.getElementById("lambda2").src="LAMBDAGREE.png";
+			document.getElementById("vrau").src="LOGOOP.png";
+			document.getElementById("vrau").style="position: absolute; left: 420px; top: -35px; width: 500px;";
+		}
+		if(mudalogos == 2){
+			document.getElementById("lambda1").src="LAMBDABLU.png";
+			document.getElementById("lambda2").src="LAMBDABLU.png";
+			document.getElementById("vrau").src="LOGOBS.png";
+			document.getElementById("vrau").style="position: absolute; left: 420px; top: -35px; width: 500px;";
+		}
+		if(mudalogos == 3){
+			document.getElementById("lambda1").src="LAMBDA2.png";
+			document.getElementById("lambda1").style="position: absolute; left: 10px; top: 25px;";
+			document.getElementById("lambda2").src="LAMBDA2.png";
+			document.getElementById("lambda2").style="position: absolute; right: 10px; top: 25px;";
+			document.getElementById("vrau").src="LOGO2.png";
+			document.getElementById("vrau").style="position: absolute; left: 420px; top: -35px; width: 500px;";
+
+		}
+		if(mudalogos == 4){
+			document.getElementById("vrau").src="LOGOALYX.png";
+			document.getElementById("vrau").style="position: absolute; left: 530px; top: 15px; width: 300px;";
+			document.getElementById("lambda1").src="LAMBDAALYX.png";
+			document.getElementById("lambda2").src="LAMBDAALYX.png";
+		}
+		if(mudalogos == 5){
+			document.getElementById("vrau").src="LOGO2E1.png";
+			document.getElementById("vrau").style="position: absolute; left: 420px; top: -35px; width: 500px;";
+			document.getElementById("lambda1").src="LAMBDA2.png";
+			document.getElementById("lambda2").src="LAMBDA2.png";
+		}
+		if(mudalogos == 6){
+			document.getElementById("vrau").src="LOGO2E2.png";
+			document.getElementById("vrau").style="position: absolute; left: 420px; top: -35px; width: 500px;";
+			document.getElementById("lambda1").src="LAMBDA2.png";
+			document.getElementById("lambda2").src="LAMBDA2.png";
+		}
+	}
+	console.log({mudalogos});
+</script>
+</html>

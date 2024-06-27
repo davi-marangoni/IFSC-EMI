@@ -1,0 +1,9 @@
+Exe05 – Javascript - parte III 
+
+1)Faça um programa para uma Pizzaria
+
+Preços da Pizza média: Calabreza = R$ 30,00,  Portuguesa = R$ 35,00, Mexicana = R$ 40,00 e Manjericão = R$ 45,00
+
+Onde: pizza pequena multiplique por 0,5 e pizza gigante multiplique por 1,5.
+
+Obs: Caso o cliente queira refrigerante acrescente R 10,00, se quiser sobremesa acrescente mais R$ 5,00;

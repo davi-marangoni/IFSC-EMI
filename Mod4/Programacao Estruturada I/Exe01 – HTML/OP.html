@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" >
+    <title></title>
+    <script src="javinhadnv.js"></script>
+    <link href="cleison.css" rel="stylesheet"/>
+</head>
+<body     style="background-color: #050505;font-family: Arial; font-size: 30px;">
+<img src="fundo2.png" width="1000px, 1000px"/>
+<table  style="background-color: #050505; width: 500px; position: absolute; top: 8px; left: 260px;">
+    <td>
+        <h1 style="color: #0bff43">SINOPSE</h1>
+        <p style="color: #0bff43">Em Opposing Force o jogador assume o controle do soldado da HECU Adrian Shepard. Quando a unidade de Adrian estava se aproximando de Black Mesa, foram atacados por alienígenas, assim, o helicóptero cai.</p>
+        <p style="color: #0bff43">A missão de Adrian, como os outros Fuzileiros, é chegar a Black Mesa e eliminar as provas do acidente. Porém, Adrian nunca teve essa intenção. Acontece que, quando Adrian ia no helicóptero, os Xenianos (os extaterrestres de Half-Life 1) o atacam, fazendo com que Adrian tenha de lutar pela sua vida. Então ele é salvo pelos cientistas e recebe ordens de eliminar Gordon Freeman (por isso ele segue Freeman até o portal).</p>
+        <p style="color: #0bff43">Em Black Mesa, Adrian vê o caos em que Black Mesa havia se tornado, cientistas e seguranças mortos e alienígenas andando pelo complexo. Assim Adrian precisa lutar para escapar. Perto do final do jogo, o jogador tem a opção de seguir Gordon no portal para Xen. Mas acaba indo para uma outra área do planeta onde tem uma conversa com G-man e acaba suspenso no tempo.</p>
+        <button type="button" onclick="Mudarestado1('minhaDiv1')" style=" font-size: medium;text-align: left;width: 500px; background-color: #050505 ; border-color: #050505 ; color: #0bff43;">NOVIDADES ↓</button>
+        <div id="minhaDiv1" style="display:none; color: #0bff43">
+            <p>• Adicao de novas armas, e explicacao de fatos que ocorreram paralelamente ao jogo principal.</p>
+            <p>• Explicação de fatos que ocorreram paralelamente ao jogo principal.</p>
+       </div>
+        <button type="button" onclick="Mudarestado2('minhaDiv2')" style=" font-size: medium;text-align: left;width: 500px; background-color: #050505 ; border-color: #050505 ; color: #0bff43;">PERSONAGENS IMPORTANTES ↓</button>
+        <div id="minhaDiv2" style="display:none; color: #0bff43">
+            <p>Adrian Shephard</p>
+            <div>
+                <p><img src="SHEPHARD.png" width="200px, 200px" /></p>
+                <p>Soldado que foi enviado a Black Mesa para ajudar a conter o incidente.</p>
+            </div>
+</table>
+</body>
+<script>
+    function Mudarestado1(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    function Mudarestado2(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
+</html>

@@ -1,0 +1,13 @@
+Exercício Avaliativo 2: HTML e CSS 
+
+Desenvolver uma(s) página(s) html e css para uma empresa de serviços a sua escolha, baseado na página modelo que será apostada no SIGAA em 30/03/20. O objetivo desta página é aplicar as sintaxes html e CSS conforme o modelo proposto.
+
+Esta página deve conter:
+
+1)Navegação tipo botão conforme o modelo, com 4 opções conforme o modelo.
+
+2)Cabeçalho para colocar o nome da loja (header)
+
+3)Criação de menu no lado direito <aside>
+
+4)Divisão de tela

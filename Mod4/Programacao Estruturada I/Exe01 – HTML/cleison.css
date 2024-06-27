@@ -1,0 +1,25 @@
+.nav1 {
+     color: #ff720a;
+ }
+
+.nav2 {
+    color: #178bff;
+}
+.nav3 {
+    color: #0bff43;
+}
+
+naveee {
+    border: 1px solid #ccc;
+    padding: 6px
+}
+
+naveee ul {
+    display: none /* Inicialmente o conteúdo do menu não é exibido */
+}
+
+naveee ul.active {
+    display: block /* Somente quando a classe 'active' estiver presente ele será mostrado. */
+}
+
+

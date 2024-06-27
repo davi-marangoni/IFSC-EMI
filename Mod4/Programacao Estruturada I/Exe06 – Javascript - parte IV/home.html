@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tijolaria do Davi</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="yal.css">
+</head>
+<body>
+    <header>
+        <p>Davi Materiais de Construção</p>
+    </header>
+    <div>
+        <div class="c">
+            <div class="cc">
+                <label for="piso">Selecione o Tipo de Piso:</label>
+                <select id="piso" name="piso" style="margin-left: 10rem">
+                    <option value="mad">Madeira (R$ 3,00)</option>
+                    <option value="laj">Lajota(R$ 4,00)</option>
+                    <option value="lam">Laminado(R$ 5,00)</option>
+                    <option value="car">Carpê(R$ 6,00)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="d">
+            <div class="dd">
+                <label for="number1"><span>Tamanho do Piso:</span></label>
+                <input type="tel" id="number1" name="x">
+                <label for="number2"><span>/</span></label>
+                <input type="tel" id="number2" name="y">
+                <br>
+                <br>
+                <label for="number3"><span>Metragem para Colocação do Piso:</span></label>
+                <input type="tel" id="number3" name="tp">
+            </div>
+        </div>
+        <div class="e">
+            <div class="ee">
+                <label for="tijolo">Selecione o Tipo de Tijolo:</label>
+                <select id="tijolo" name="tijolo" style="margin-left: 23.8rem;">
+                    <option value="T1">Tijolo Duvidoso (R$ 1,00)</option>
+                    <option value="T2">Tijolo Normal(R$ 2,00)</option>
+                    <option value="T3">Tijolo Bão(R$ 3,00)</option>
+                </select>
+            </div>
+        </div>
+        <div class="f">
+            <div class="ff">
+                <label for="number4"><span>Tamanho do Tijolo:</span></label>
+                <input type="tel" id="number4" name="xt">
+                <label for="number5"><span>/</span></label>
+                <input type="tel" id="number5" name="yt">
+                <br>
+                <br>
+                <label for="number6"><span>Metragem para Colocação dos Tijolos:</span></label>
+                <input type="tel" id="number6" name="tt">
+            </div>
+        </div>
+        <div class="g">
+            <div class="gg">
+                <label for="maodeobra">Selecione o Tipo de Tijolo:</label>
+                <select id="maodeobra" name="maodeobra" style="margin-left: 18.8rem">
+                    <option value="M1">Mão de Obra Duvidosa (R$ 30,00/m2)</option>
+                    <option value="M2">Mão de Obra Normal(R$ 50,00/m2)</option>
+                    <option value="M3">Mão de Obra Top(R$ 80,00/m2)</option>
+                </select>
+            </div>
+        </div>
+        <div class="h">
+            <div class="hh">
+                <label for="number7"><span>Metragem da Construção:</span></label>
+                <input type="tel" id="number7" name="mc">
+            </div>
+        </div>
+        <button class="botao" style="margin-left: 40rem" id="botao" type="button" onclick="Calcula()">Total</button>
+        <br>
+        <br>
+        <div class="i">
+            <div class="ii" align="center"> <label id="valor" background="pink">R$ 0,00</label></div>
+        </div>
+    </div>
+    </form>
+    <footer>
+    </footer>
+    <script>
+        function Calcula() {
+            var s1 = 0
+            var t2 = 0
+            var mo3 = 0
+            var n3 = 0;
+            var n6 = 0;
+            var n7 = 0;
+            var Piso = window.document.getElementById('piso').value
+            if (Piso == 'mad') {
+                s1 = 3;
+            }
+            else if (Piso == 'lag') {
+                s1 = 4;
+            }
+            else if (Piso == 'lam') {
+                s1 = 5;
+            }
+            else if (Piso == 'car') {
+                s1 = 6;
+            }
+            var Tijolo = window.document.getElementById('tijolo').value
+            if (Tijolo == 'T1') {
+                t2 = 1;
+            }
+            if (Tijolo == 'T2') {
+                t2 = 2;
+            }
+            if (Tijolo == 'T3') {
+                t2 = 3;
+            }
+            var Maodeobra = window.document.getElementById('maodeobra').value
+            if (Maodeobra == 'M1') {
+                mo3 = 30;
+            }
+            if (Maodeobra == 'M2') {
+                mo3 = 50;
+            }
+            if (Maodeobra == 'M3') {
+                mo3 = 80;
+            }
+            var n3 = document.getElementById('number3').value;
+            var n6 = document.getElementById('number6').value;
+            var n7 = document.getElementById('number7').value;
+            var s1 = s1 * n3;
+            var t2 = t2 * n6;
+            var mo3 = mo3 * n7;
+            var orcamento = s1 + t2 + mo3;
+            window.document.getElementById('valor').innerHTML = orcamento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Exe09 – Javascript – parte VII
+
+Funções do Vetor
+
+ Utilizando as funções do Vetor, mostre a sintaxe e print do resultado:
+
+ 
+
+1)Crie dos vetores para incluir seu nome e sobrenome. Concatene-os em um terceiro vetor e Imprima na tela.
+
+2)Com relação ao terceiro vetor criado no exercício 1, encontre em que posição encontra-se a letra 'a' e imprima na tela.
+
+Obs: Converta primeiro o vetor para string e depois pesquise para funcionar.
+
+3)Crie um vetor com 5 elementos, imprima-o na tela inserindo o caracter "*" para separar os elementos.
+
+4)Com relação ao terceiro vetor criado no exercício 1, encontre a última posição em que encontra-se a letra 'a' e imprima na tela.
+
+5)Crie um vetor e remova o último elemento do vetor criado;
+
+6)Introduza a letra removida e o texto " é campeão!" no vetor do exercício 1 (push).
+
+7) Crie um vetor e imprima de traz para frente o vetor (reverse).
+
+8) Crie um vetor e remova o primeiro elemento de um vetor(shift).
+
+9) Crie um vetor e demonstre da 3 até o 5 elemento deste (slice).
+
+10) Crie um vetor desordenado e ordene-o (sort).
+
+11) Crie um vetor e acrescente 3 valores a partir da posição 2 (splice).
+
+12) Refaça o exercício anterior, porém sobrepondo os valores no vetor(splice).

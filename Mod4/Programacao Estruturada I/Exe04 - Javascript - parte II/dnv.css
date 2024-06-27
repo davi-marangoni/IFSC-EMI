@@ -1,0 +1,38 @@
+body {
+    background-color: darkblue;
+    margin: 0px;
+}
+
+.dive {
+    background-color: white;
+    position: center;
+    padding: 23%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+legend {
+    font-size: 30px;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+.imputt {
+    left: 673px;
+}
+
+button {
+    left: 600px;
+}
+
+.B {
+    left: 700px;
+}
+
+.A {
+    left: 700px;
+}

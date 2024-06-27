@@ -1,0 +1,15 @@
+1-     Exercício Avaliativo: HTML
+
+Desenvolver uma(s) página(s) html sobre um programa, série ou filme favorito. O objetivo desta página colocar uma sinopse(resumo) do programa escolhido, demonstrar seus personagens e habilidades.
+
+Esta página deve conter:
+
+- Formulário;
+
+- Navegação e ancoras;
+
+1)      - Tabelas;
+
+Imagens;
+
+1)      Listas de Definição.
